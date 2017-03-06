@@ -13,10 +13,13 @@ public class Logica {
 	}
 
 	public void teclas() {
-		
+
 	}
 
-	// if (keyCode = ) {
-	// }
+	public void cargarTexto() {
+		String[] color = app.loadStrings(".../data/Color.txt");
+		for (int i = 0; i < color.length; i++) {
+		}
+	}
 
 }
