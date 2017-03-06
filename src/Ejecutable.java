@@ -21,4 +21,8 @@ public class Ejecutable extends PApplet {
 		background(100);
 		log.nuevo();
 	}
+
+	public void keyPressed() {
+		log.teclas();
+	}
 }
