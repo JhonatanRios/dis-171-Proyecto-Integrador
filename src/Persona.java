@@ -1,4 +1,5 @@
 import processing.core.PApplet;
+import processing.core.PConstants;
 
 public class Persona {
 
@@ -28,11 +29,10 @@ public class Persona {
 
 	public void pintar() {
 		app.fill(r, g, b);
-		app.text(nombre, 20, 30 + (y * 30));
-		app.text(apellido, 40, 30 + (y * 30));
-		app.text(cedula, 70, 30 + (y * 30));
-		app.text(edad, 80, 30 + (y * 30));
-		app.text(peso, 100, 30 + (y * 30));
+		app.textSize(17);
+		app.textAlign(PConstants.CENTER, PConstants.CENTER);
+		app.text("Nombre: " + nombre + " // Apellido: " + apellido + " // CC: " + cedula + " // Edad: " + edad
+				+ " // Peso: " + peso, app.width / 2, y);
 	}
 
 }
