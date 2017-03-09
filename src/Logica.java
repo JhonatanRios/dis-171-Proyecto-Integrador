@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.TreeSet;
 
 import processing.core.PApplet;
 
@@ -7,6 +9,10 @@ public class Logica {
 	PApplet app;
 	Persona perso;
 	ArrayList<Persona> persona = new ArrayList<Persona>();
+	TreeSet<Persona> caso1;
+	ArrayList<Persona> caso2;
+	TreeSet<Persona> caso3;
+	HashSet<Persona> caso4;
 
 	public Logica(PApplet app) {
 		this.app = app;
@@ -27,10 +33,10 @@ public class Logica {
 			String[] nombre_ape = usu[i].split(":");
 
 			for (int j = 0; j < info.length; j++) {
-				String[] cel_eda_pes = info[j].split("/");
-				int cedula = Integer.parseInt(cel_eda_pes[0]);
-				int edad = Integer.parseInt(cel_eda_pes[1]);
-				int peso = Integer.parseInt(cel_eda_pes[2]);
+				String[] celEdaPes = info[j].split("/");
+				int cedula = Integer.parseInt(celEdaPes[0]);
+				int edad = Integer.parseInt(celEdaPes[1]);
+				int peso = Integer.parseInt(celEdaPes[2]);
 
 				for (int k = 0; k < color.length; k++) {
 					String[] rgb = color[k].split("/");

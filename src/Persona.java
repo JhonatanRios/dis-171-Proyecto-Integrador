@@ -35,4 +35,11 @@ public class Persona {
 				+ " // Peso: " + peso, app.width / 2, y);
 	}
 
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
 }
