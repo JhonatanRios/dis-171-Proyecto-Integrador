@@ -42,4 +42,12 @@ public class Persona {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	public int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
 }
