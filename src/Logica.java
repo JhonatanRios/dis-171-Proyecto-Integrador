@@ -17,9 +17,14 @@ public class Logica {
 	}
 
 	public void cargarTexto() {
-		String[] color = app.loadStrings(".../data/Color.txt");
+		String[] color = app.loadStrings("../data/color.txt");
 		for (int i = 0; i < color.length; i++) {
+			String[] r = color[i].split(",");
+			String[] g = color[i].split(",");
+			String[] b = color[i].split(",");
+			
 		}
+		
 	}
 
 }
