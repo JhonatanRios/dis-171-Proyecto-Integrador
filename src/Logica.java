@@ -14,6 +14,8 @@ public class Logica {
 	TreeSet<Persona> caso3;
 	HashSet<Persona> caso4;
 
+	int tipoCom;
+
 	public Logica(PApplet app) {
 		this.app = app;
 	}
@@ -53,17 +55,37 @@ public class Logica {
 
 	// No lo pude realizar
 	public void teclas() {
-		if (app.key == 1) {
-
+		if (app.key == '1') {
+			tipoCom = 1;
+			caso1.clear();
+			caso2.clear();
+			caso3.clear();
+			caso4.clear();
+			caso1.addAll(persona);
 		}
-		if (app.key == 2) {
-
+		if (app.key == '2') {
+			tipoCom = 2;
+			caso1.clear();
+			caso2.clear();
+			caso3.clear();
+			caso4.clear();
+			caso2.addAll(persona);
 		}
-		if (app.key == 3) {
-
+		if (app.key == '3') {
+			tipoCom = 3;
+			caso1.clear();
+			caso2.clear();
+			caso3.clear();
+			caso4.clear();
+			caso3.addAll(persona);
 		}
-		if (app.key == 4) {
-
+		if (app.key == '4') {
+			tipoCom = 4;
+			caso1.clear();
+			caso2.clear();
+			caso3.clear();
+			caso4.clear();
+			caso4.addAll(persona);
 		}
 	}
 
