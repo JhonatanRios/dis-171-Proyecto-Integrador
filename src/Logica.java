@@ -21,7 +21,7 @@ public class Logica {
 	}
 
 	public void nuevo() {
-		perso.pintar();
+		perso.pintar(app);
 	}
 
 	// Colaboración de santiago montealegre
@@ -46,14 +46,14 @@ public class Logica {
 					int g = Integer.parseInt(rgb[1]);
 					int b = Integer.parseInt(rgb[2]);
 
-					persona.add((new Persona(app, nombre_ape[0], nombre_ape[1], cedula, edad, peso, r, g, b)));
+					persona.add((new Persona(app, nombre_ape[0], nombre_ape[1], cedula, edad, peso, r, g, b, i * 30)));
 				}
 			}
 		}
 
 	}
 
-	// No lo pude realizar
+	// Ayuda de pablo Rosas
 	public void teclas() {
 		if (app.key == '1') {
 			tipoCom = 1;

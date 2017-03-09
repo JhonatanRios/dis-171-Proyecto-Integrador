@@ -15,7 +15,8 @@ public class Persona {
 	int x;
 	int y;
 
-	public Persona(PApplet app, String nombre, String apellido, int cedula, int edad, int peso, int r, int g, int b) {
+	public Persona(PApplet app, String nombre, String apellido, int cedula, int edad, int peso, int r, int g, int b,
+			int y) {
 		this.app = app;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -25,14 +26,15 @@ public class Persona {
 		this.r = r;
 		this.g = g;
 		this.b = b;
+		this.y = y;
 	}
 
-	public void pintar() {
+	public void pintar(PApplet app) {
 		app.fill(r, g, b);
 		app.textSize(17);
 		app.textAlign(PConstants.CENTER, PConstants.CENTER);
 		app.text("Nombre: " + nombre + " // Apellido: " + apellido + " // CC: " + cedula + " // Edad: " + edad
-				+ " // Peso: " + peso, app.width / 2, y);
+				+ " // Peso: " + peso, 50, y);
 	}
 
 	public int compareTo(Persona p) {
